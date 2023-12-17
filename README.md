@@ -12,7 +12,7 @@ Quick CMAKE Template for C++17 Cross Platform Development.
 You have to install below pre-requisites
 1. Build tool : CMake >= 3.27 (No regret when you need protoc support)
 2. C++17 Compiler: Clang or GCC or MSVC
-3. Dev IDE : Visual Studia Code (VS CODE) with Extension
+3. Dev IDE : Visual Studio Code (VS CODE) with C++ Extension
 4. GDB for debugging
 5. Doxygen for generating documentation
 6. Catch 2 for testing
