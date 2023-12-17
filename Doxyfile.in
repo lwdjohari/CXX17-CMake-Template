@@ -1,0 +1,113 @@
+DOXYFILE_ENCODING      = UTF-8
+PROJECT_NAME           = "CXX17"
+PROJECT_BRIEF          = "CXX17 Project"
+PROJECT_NUMBER         = "v1.0"
+PROJECT_LOGO           = @CMAKE_CURRENT_SOURCE_DIR@/docs/logo.drawio.svg
+
+HAVE_DOT = YES
+DOT_IMAGE_FORMAT = svg
+DOT_TRANSPARENT = YES
+
+
+OUTPUT_LANGUAGE        = English
+BRIEF_MEMBER_DESC      = YES
+REPEAT_BRIEF           = YES
+ABBREVIATE_BRIEF       = "The $name class" \
+                         "The $name widget" \
+                         "The $name file" \
+                         is \
+                         provides \
+                         specifies \
+                         contains \
+                         represents \
+                         a \
+                         an \
+                         the
+
+FULL_PATH_NAMES        = NO
+STRIP_FROM_PATH        = @CMAKE_CURRENT_SOURCE_DIR@/
+STRIP_FROM_INC_PATH    =
+SHORT_NAMES            = NO
+
+BUILTIN_STL_SUPPORT    = NO
+
+
+GROUP_NESTED_COMPOUNDS = NO
+SUBGROUPING            = YES
+INLINE_GROUPED_CLASSES = NO
+INLINE_SIMPLE_STRUCTS  = NO
+TYPEDEF_HIDES_STRUCT   = NO
+DISTRIBUTE_GROUP_DOC   = YES 
+EXTRACT_ALL            = YES
+EXTRACT_PRIVATE        = NO
+EXTRACT_PRIV_VIRTUAL   = NO
+EXTRACT_PACKAGE        = NO
+EXTRACT_STATIC         = NO
+EXTRACT_LOCAL_CLASSES  = YES
+EXTRACT_LOCAL_METHODS  = NO
+EXTRACT_ANON_NSPACES   = NO
+RESOLVE_UNNAMED_PARAMS = YES
+HIDE_UNDOC_MEMBERS     = NO
+HIDE_UNDOC_CLASSES     = NO
+HIDE_FRIEND_COMPOUNDS  = NO
+HIDE_IN_BODY_DOCS      = NO
+INTERNAL_DOCS          = NO
+CASE_SENSE_NAMES       = NO
+HIDE_SCOPE_NAMES       = YES
+HIDE_COMPOUND_REFERENCE= NO
+SHOW_HEADERFILE        = YES
+SHOW_INCLUDE_FILES     = YES
+SHOW_GROUPED_MEMB_INC  = NO
+FORCE_LOCAL_INCLUDES   = NO
+INLINE_INFO            = YES
+SORT_MEMBER_DOCS       = YES
+SORT_BRIEF_DOCS        = NO
+SORT_MEMBERS_CTORS_1ST = NO
+SORT_GROUP_NAMES       = NO
+SORT_BY_SCOPE_NAME     = NO
+STRICT_PROTO_MATCHING  = NO
+GENERATE_TODOLIST      = YES
+GENERATE_TESTLIST      = YES
+GENERATE_BUGLIST       = YES
+GENERATE_DEPRECATEDLIST= YES
+SHOW_FILES             = YES
+SHOW_NAMESPACES        = YES
+
+INPUT_ENCODING         = UTF-8
+
+OUTPUT_DIRECTORY       = @CMAKE_CURRENT_SOURCE_DIR@/generated/docs
+INPUT                  =  @CMAKE_CURRENT_SOURCE_DIR@/README.md \ 
+                        @CMAKE_CURRENT_SOURCE_DIR@/inc/ \
+                        @CMAKE_CURRENT_SOURCE_DIR@/docs/examples
+USE_MDFILE_AS_MAINPAGE = README.md
+
+PREDEFINED = DOXYGEN_SHOULD_SKIP_THIS
+ENABLE_PREPROCESSING = YES
+MACRO_EXPANSION = YES
+GENERATE_TOC = YES
+RECURSIVE              = YES
+EXCLUDE_SYMLINKS       = NO
+EXCLUDE                =
+EXCLUDE_PATTERNS       =
+EXCLUDE_SYMBOLS        =
+
+EXAMPLE_PATH           =
+EXAMPLE_PATH           =
+EXAMPLE_PATTERNS       = *
+EXAMPLE_RECURSIVE      = NO
+
+SOURCE_BROWSER         = NO
+INLINE_SOURCES         = NO
+
+GENERATE_TREEVIEW      = YES # required!
+DISABLE_INDEX          = NO
+FULL_SIDEBAR           = NO
+HTML_EXTRA_STYLESHEET  = @CMAKE_CURRENT_SOURCE_DIR@/docs/doxygen-awesome-css/doxygen-awesome.css \
+                         @CMAKE_CURRENT_SOURCE_DIR@/docs/doxygen-awesome-css/doxygen-awesome-sidebar-only.css \
+                         @CMAKE_CURRENT_SOURCE_DIR@/docs/doxygen-awesome-css/doxygen-awesome-sidebar-only-darkmode-toggle.css
+                         
+HTML_EXTRA_FILES       = @CMAKE_CURRENT_SOURCE_DIR@/docs/doxygen-awesome-css/doxygen-awesome-darkmode-toggle.js \
+                        @CMAKE_CURRENT_SOURCE_DIR@/docs/doxygen-awesome-css/doxygen-awesome-fragment-copy-button.js
+HTML_COLORSTYLE        = LIGHT # required with Doxygen >= 1.9.5
+IMAGE_PATH             =  @CMAKE_CURRENT_SOURCE_DIR@/docs/doxygen-awesome-css/img 
+HTML_HEADER            = @CMAKE_CURRENT_SOURCE_DIR@/docs/header.html
