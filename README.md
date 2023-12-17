@@ -37,13 +37,14 @@ Asuming that you have all pre-requisites installed on your dev env
 
 1. Clone this repo.
 2. Delete all git.
-3. Move to your git repo.
-4. Open folder in `VS Code` with extension already installed.
-5. On first time run, `CMAKE` dialog will appear for you to choose which main CMakeLists.txt to be used.
-6. Adjust and changes project name to reflect your development.
-7. `Ctrl+Shift+P` then choose `CMAKE: Configure` for configure the build.
-8. `Ctrl+Shift+P` then choose `CMAKE: Build` to build.
-9. Repeat step 7 if you add new source or header files.
+3. Move files to your git local repo. DO NOT copy the git files.
+4. Run  again `git submodule add -b lts_2023_08_02  https://github.com/abseil/abseil-cpp.git deps/abseil-lts.20230802.1` on your project git local repo. 
+5. Open folder in `VS Code` with extension already installed.
+6. On first time run, `CMAKE` dialog will appear for you to choose which main CMakeLists.txt to be used.
+7. Adjust and changes project name to reflect your development on `CmakeLists.txt` file.
+8. `Ctrl+Shift+P` then choose `CMAKE: Configure` for configure the build.
+9. `Ctrl+Shift+P` then choose `CMAKE: Build` to build.
+10. Repeat step 7 if you add new source or header files.
 
 Notes : 
 <p>I'am personally most of the time are writing C++ for server application or embedded application development on Linux/WSL.</p>
