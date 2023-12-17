@@ -44,7 +44,7 @@ Asuming that you have all pre-requisites installed on your dev env
 7. Adjust and changes project name to reflect your development on `CmakeLists.txt` file.
 8. `Ctrl+Shift+P` then choose `CMAKE: Configure` for configure the build.
 9. `Ctrl+Shift+P` then choose `CMAKE: Build` to build.
-10. Repeat step 7 if you add new source or header files.
+10. Repeat step 8 to configure your build if you add new source or header files.
 
 Notes : 
 <p>I'am personally most of the time are writing C++ for server application or embedded application development on Linux/WSL.</p>
